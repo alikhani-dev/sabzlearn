@@ -1,0 +1,48 @@
+{
+  "name": "sabzlearn",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-regular-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@tanstack/react-query": "^4.29.17",
+    "@tanstack/react-query-devtools": "^4.29.17",
+    "axios": "^1.4.0",
+    "bootstrap": "^5.3.0",
+    "js-cookie": "^3.0.5",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.8.0",
+    "react-dom": "^18.2.0",
+    "react-google-recaptcha": "^3.1.0",
+    "react-hook-form": "^7.45.0",
+    "react-router-dom": "^6.14.0",
+    "typewriter-effect": "^2.20.1"
+  },
+  "devDependencies": {
+    "@tanstack/eslint-plugin-query": "^4.29.9",
+    "@types/js-cookie": "^3.0.3",
+    "@types/jwt-decode": "^3.1.0",
+    "@types/node": "^20.3.1",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "@types/react-google-recaptcha": "^2.1.5",
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0",
+    "@vitejs/plugin-react": "^4.0.1",
+    "eslint": "^8.43.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.1",
+    "swr": "^2.2.0",
+    "typescript": "^5.1.3",
+    "vite": "^4.3.9"
+  }
+}

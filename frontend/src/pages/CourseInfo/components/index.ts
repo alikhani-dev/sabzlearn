@@ -1,0 +1,5 @@
+export { default as CourseProgress } from './CourseProgress'
+export { default as TeacherDetails } from './TeacherDetails'
+export { default as Introduction } from './Introduction'
+export { default as CourseBoxes } from './CourseBoxes'
+export { default as CoursesInfo } from './CoursesInfo'
