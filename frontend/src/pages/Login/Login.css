@@ -76,6 +76,7 @@
 }
 .login-form__username,
 .login-form__name,
+.login-form__phone,
 .login-form__email,
 .login-form__confirmPassword,
 .login-form__password {
@@ -84,6 +85,7 @@
 .login-form__username-input,
 .login-form__email-input,
 .login-form__name-input,
+.login-form__phone-input,
 .login-form__confirmPassword-input,
 .login-form__password-input {
 	width: 100%;
@@ -97,6 +99,7 @@
 
 .login-form__name-icon,
 .login-form__username-icon,
+.login-form__phone-icon,
 .login-form__email-icon,
 .login-form__confirmPassword-icon,
 .login-form__password-icon {

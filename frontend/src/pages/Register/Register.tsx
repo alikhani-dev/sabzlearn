@@ -2,13 +2,14 @@ import { Footer, Header } from '../../layout'
 import { Link } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faInfo, faLock, faLockOpen, faUser, faUserPlus } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faInfo, faLock, faLockOpen, faPhone, faUser, faUserPlus } from '@fortawesome/free-solid-svg-icons'
 import { registerApi } from '../../api/auth.api'
 import { useAuth } from '../../context/AuthProvider'
 
 type FormProps = {
 	name: string
 	email: string
+	phone: string
 	username: string
 	password: string
 	confirmPassword: string
@@ -85,6 +86,21 @@ const Register: React.FC = () => {
 							/>
 						</div>
 						{errors.email && <span className='h6 text-danger'>{errors.email.message}</span>}
+						<div className='login-form__phone'>
+							<input
+								{...register('phone', {
+									required: 'شماره همراه الزامی است'
+								})}
+								className={`login-form__phone-input ${errors.phone ? 'border-danger' : ''}`}
+								type='text'
+								placeholder='شماره همراه'
+							/>
+							<FontAwesomeIcon
+								className={`login-form__phone-icon ${errors.phone ? 'text-danger' : ''}`}
+								icon={faPhone}
+							/>
+						</div>
+						{errors.password && <span className='h6 text-danger'>{errors.password.message}</span>}
 						<div className='login-form__password'>
 							<input
 								{...register('password', {

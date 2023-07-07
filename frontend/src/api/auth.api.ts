@@ -4,6 +4,7 @@ import endpoint from '../services/endpoint'
 type RegisterAPI = {
 	name: string
 	email: string
+	phone: string
 	username: string
 	password: string
 	confirmPassword: string
