@@ -1,28 +1,33 @@
 const endpoint = {
 	authentication: {
-		register: '/auth/register',
-		login: '/auth/login',
-		me: '/auth/me'
+		register: 'auth/register',
+		login: 'auth/login',
+		me: 'auth/me'
 	},
 	course: {
-		createSession: '/courses/:id/sessions',
-		register: '/courses/:id/register',
-		one: '/courses/:shortName',
-		create: '/courses',
-		all: '/courses'
+		createSession: 'courses/:id/sessions',
+		register: 'courses/:id/register',
+		one: 'courses/:shortName',
+		sessions: 'courses/sessions',
+		related: 'related/canvas',
+		create: 'courses',
+		all: 'courses'
 	},
 	menus: {
-		topBar: '/menus/topbar',
-		create: '/menus',
-		all: '/menus'
+		topBar: 'menus/topbar',
+		create: 'menus',
+		all: 'menus'
 	},
 	category: {
-		create: '/category'
+		create: 'category'
 	},
 	article: {
-		create: '/articles',
-		all: '/articles',
-		one: '/articles/:shortName'
+		create: 'articles',
+		all: 'articles',
+		one: 'articles/:shortName'
+	},
+	comments: {
+		add: 'comments'
 	}
 }
 
